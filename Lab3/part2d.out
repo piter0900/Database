@@ -1,0 +1,32 @@
+mysql> call increase_salary_proc(45,120,@error);
+Query OK, 1 row affected (0.18 sec)
+
+mysql> select @error;
++--------+
+| @error |
++--------+
+|     -1 |
++--------+
+1 row in set (0.00 sec)
+
+mysql> call increase_salary_proc(200,12,@error);
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> select @error;
++--------+
+| @error |
++--------+
+|     -2 |
++--------+
+1 row in set (0.00 sec)
+
+mysql> call increase_salary_proc(68,20,@error);
+Query OK, 1 row affected (0.19 sec)
+
+mysql> select @error;
++--------+
+| @error |
++--------+
+|      0 |
++--------+
+1 row in set (0.00 sec)

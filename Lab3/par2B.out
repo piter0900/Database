@@ -1,0 +1,16 @@
+mysql> call increase_salary_proc(45,12.50);
+Query OK, 1 row affected (0.11 sec)
+
++-------+----------+------------+--------+--------+
+| empID | empName  | job        | deptID | salary |
++-------+----------+------------+--------+--------+
+|    23 | Smith    | programmer |     12 |  35000 |
+|    45 | Kelly    | engineer   |      7 |  41625 |
+|    56 | Herr     | janitor    |      7 |  26000 |
+|    66 | Hess     | technician |      7 |  32000 |
+|    68 | Morris   | secretary  |      3 |  23000 |
+|    69 | Maria    | engineer   |      3 |  32000 |
+|    77 | Hergot   | secretary  |      7 |  28000 |
+|    89 | Williams | analyst    |     12 |  36000 |
+|    92 | Mays     | engineer   |      7 |  45000 |
++-------+----------+------------+--------+--------+

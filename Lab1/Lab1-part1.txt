@@ -1,0 +1,11 @@
+mysql> select employee.empname from employee
+    -> where employee.job = "engineer"
+    -> and employee.salary > 35000;
+	
+mysql> select project.* from project
+    -> where project.funds >= 300000;
+	
+mysql> (select empid from employee where employee.job = "programmer")
+    -> union
+    -> (select empid from assigned where assigned.role = "programmer");
+	
